@@ -1,0 +1,146 @@
+:root {
+    --color-white: #f3f3f3;
+    --color-darkblue: #1b1b32;
+    --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+    --color-green: #37af65;
+    --font-principal: 'Poppins', sans-serif;
+    --font-cor: #495057
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--color-white);
+    margin: 0;
+    font-family: var(--font-principal);
+  }
+  
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image: linear-gradient(
+        115deg,
+        rgba(58, 58, 158, 0.8),
+        rgba(136, 136, 206, 0.7)
+      ),
+      url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+.container__titulo {
+    font-weight: 400;
+}
+.container__texto {
+    font-style: italic;
+    font-weight: 200;
+}
+.formulario {
+    margin-top: 1em;
+    background-color: var(--color-darkblue-alpha);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    padding: 2em;
+    border-radius: 6px;
+    text-align: left;
+}
+.formulario__item {
+    margin-bottom: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.formulario__legenda {
+    font-size: 12px;
+}
+.formulario__input {
+    margin-top: 0.2em;
+    display: block;
+    width: 50vw;
+    padding: 0.5em;
+    border-radius: 6px;
+}
+.formulario__input::placeholder {
+    font-size: 14px;
+    font-family: var(--font-principal);
+    padding-left: 0.5em;
+}
+/* .select__left {
+    display: block;
+    position: relative;
+    left: 15px;
+}*/
+.formulario__select-div {
+    display: flex;
+    justify-content: center;
+}
+.formulario__select {
+    margin-top: 0.2em;
+    width: 50vw;
+    padding: 0.5em;
+    border-radius: 6px;
+    color: var(--font-cor);
+
+}
+.formulario__option {
+    font-family: var(--font-principal);
+    color: var(--font-cor);
+}
+
+.formulario__radio {
+    display: inline-block;
+    margin-top: 0.6em;
+    margin-right: 0.625em;
+}
+.formulario__bloco-radio {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+}
+.formulario__textarea {
+    margin-top: 0.5em;
+    height: 100px;
+    font-family: var(--font-principal);
+    padding: 0.6em;
+}
+.formulario__submit {
+    margin-top: 0.5em;
+    background: var(--color-green);
+    color: var(--color-white);
+    border: none;
+    padding: 0.8em;
+    border-radius: 2px;
+    font-family: var(--font-principal);
+    font-size: 16px;
+}

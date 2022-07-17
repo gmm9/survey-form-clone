@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="container__titulo">freeCodeCamp Survey Form</h1>
+        <p class="container__texto">Thank you for taking the time to help us improve the<br> platform</p>
+        <form class="formulario">
+            <div class="formulario__item">
+            <label for="name" class="formulario__label">Name</label>
+                <input name="name" type="text" class="formulario__input" placeholder="Enter your name">
+            </div>
+            <div class="formulario__item">
+                <label for="email" class="formulario__label">Email</label>
+                <input name="email" type="email" class="formulario__input" placeholder="Enter your email">
+            </div>
+            <div class="formulario__item">
+                <label for="Age" class="formulario__label">Age <span class="formulario__legenda">(optional)</span></label>
+                <input name="age" type="number" class="formulario__input" placeholder="Age">
+            </div>
+            <div class="formulario__item">
+                <label for="" class="formulario__label select__left">Which option best describes your current role?</label>
+                <div class="formulario__select-div">
+                    <select class="formulario__select">
+                        <option class="formulario__option disabled" disabled selected>Select current role</option>
+                        <option class="formulario__option">Student</option>
+                        <option class="formulario__option">Full Time Job</option>
+                        <option class="formulario__option">Full Time Learner</option>
+                        <option class="formulario__option">Prefer not to say</option>
+                        <option class="formulario__option">Other</option>
+                    </select>
+                </div>
+            </div>
+            <div class="formulario__item">
+                <div class="formulario__bloco-radio">
+                <label for="name" class="formulario__label">Would you recommend freeCodeCamp to a friend?</label>
+                <label> <input type="radio" name="agree" class="formulario__radio" checked/>Definitely</label>
+                <label> <input type="radio" name="agree" class="formulario__radio" />Maybe</label>
+                <label> <input type="radio" name="agree" class="formulario__radio" />Not sure</label>
+            </div>
+            </div>
+            <div class="formulario__item">
+                <label for="" class="formulario__label select__left">What is your favorite feature of freeCodeCamp?</label>
+                <div class="formulario__select-div">
+                    <select class="formulario__select">
+                        <option class="formulario__option disabled" disabled selected>Select an option</option>
+                        <option class="formulario__option">Challenges</option>
+                        <option class="formulario__option">Projects</option>
+                        <option class="formulario__option">Community</option>
+                        <option class="formulario__option">Open source</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="formulario__item formulario__bloco-radio">
+                <label for="name" class="formulario__label">What would you like to see improved? <span class="formulario__legenda"> (Check all that apply)</span></label>
+                <label> <input type="checkbox" name="agree" class="formulario__radio" />Front-end Projects</label>
+                <label> <input type="checkbox" name="agree" class="formulario__radio" />Back-end Projects</label>
+                <label> <input type="checkbox" name="agree" class="formulario__radio" />Data Visualization</label>
+                <label> <input type="checkbox" name="agree" class="formulario__radio" />Challenges</label>
+                <label> <input type="checkbox" name="agree" class="formulario__radio" />Open Source Community</label>
+                <label> <input type="checkbox" name="agree" class="formulario__radio" />Gitter help rooms</label>
+                <label> <input type="checkbox" name="agree" class="formulario__radio" />Videos</label>
+                <label> <input type="checkbox" name="agree" class="formulario__radio" />City Meetups</label>
+                <label> <input type="checkbox" name="agree" class="formulario__radio" />Wiki</label>
+                <label> <input type="checkbox" name="agree" class="formulario__radio" />Forum</label>
+                <label> <input type="checkbox" name="agree" class="formulario__radio" />Additional Courses</label>
+                </div>
+
+                <div class="formulario__item formulario__bloco-radio">
+                    <label for="email" class="formulario__label">Any comments or suggestions?</label>
+                    <textarea class="formulario__textarea" placeholder="Enter your comment here..."></textarea>
+                </div>
+                <div class="formulario__item formulario__bloco-radio">
+                    <input class="formulario__submit" type="submit" value="Submit">
+                </div>
+        </form>
+    </div>
+</body>
+</html>
