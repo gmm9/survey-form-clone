@@ -10,3 +10,4 @@ Projeto Original: https://survey-form.freecodecamp.rocks/
 
 Meu projeto: https://tridentx9.github.io/survey-form-clone/
 
+Em breve por o site responsivo. Atualmente apenas versões para desktop.
